@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { Container } from 'semantic-ui-react';
-import { Sticky } from 'semantic-ui-react'
 import SocialMedia from './Components/SocialMedia/SocialMedia';
+import WorkExperience from './Components/Resume/Experience/WorkExperience';
 import Particles from 'react-particles-js';
+import { Card } from 'semantic-ui-react';
 import './App.css';
 
 class App extends Component {
   basicInfo = {
     profileImage: 'https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-9/48429124_2412101432153159_5881497613500416000_n.jpg?_nc_cat=105&_nc_oc=AQlz2tz1-PZ79lHxmpq4Sgr9tfnjD5zO14uOMD36UU4MBGvWDCyo0x3BWTwl3mI9gg8&_nc_ht=scontent.fhou1-2.fna&oh=07a31f0903a79912206fec81c7b2a77a&oe=5DB24672',
-    name: 'Hi, My name is Ansh Sikka',
-    description: 'I am a senior majoring in computer science at The University of Minnesota. My interests and skills include data science, cloud platform engineering, and the application of emerging technologies and tools.'
+    name: 'Hi, my name is Ansh Sikka',
+    description: 'I am a senior majoring in computer science at The University of Minnesota. I am currently a teaching assistant for the computer science department specializing in discrete structures of computer science. My interests and skills include data science, cloud platform engineering, and the application of emerging technologies and tools.'
   }
 
   socialMedia = [
@@ -52,7 +53,10 @@ class App extends Component {
       positionName: 'Google Daydream Student Innovator',
       date: 'December 2017 - May 2018',
       workDescription: [
-        'Promoted and lead applications and development of Google\'s Virtual Reality Platform, Google Daydream, throughout the University of Minnesota'
+        'Promoted and lead applications and development of Google\'s Virtual Reality Platform, Google Daydream, throughout the University of Minnesota',
+        'Ran VR experience events throughout the University',
+        'Recieved certifications in virtual reality video production and a Google Cloud certification',
+        'Received a Google Pixelbook in recognition of hard work',
       ]
     }
   ]
@@ -60,41 +64,45 @@ class App extends Component {
   render() {
     return (
       <div className="OverlayBackground" style={BackgroundStyle}>
-        <Particles canvasClassName="OverlayBackground" style={particleStyle}></Particles>
-        <div className="App">
-          <Sticky>
-            <div className="Header">
-              <div className="Menu" style={MenuStyle}>
-                <a href="https://drive.google.com/open?id=1-5gr7ui7rGrVDdc2DeNJ_pMC71OmQ3oY">
-                  <h4>Resume</h4>
-                </a>
-                <a href="http://github.com/anshikka">
-                  <h4>Projects</h4>
-                </a>
+        <Particles canvasClassName="OverlayBackground" style={particleStyle}/>
+          <div className="App">
+              <div className="Header">
+                <div className="Menu" style={MenuStyle}>
+                  <a href="https://drive.google.com/open?id=1-5gr7ui7rGrVDdc2DeNJ_pMC71OmQ3oY">
+                    <h4>Resume</h4>
+                  </a>
+                  <a href="http://github.com/anshikka">
+                    <h4>Projects</h4>
+                  </a>
+                </div>
               </div>
-            </div>
-          </Sticky>
 
-          
-          <Container>
-
-
-            <div className="Introduction" style={introductionStyle}>
-              <h1 class="ui center aligned header" style={headerStyle}>{this.basicInfo.name}</h1>
-              <img src={this.basicInfo.profileImage} class="ui medium circular image" style={headerImageStyle} alt=''/>
-              <h3 class="ui center aligned header" style={headerStyle}>{this.basicInfo.description}</h3>
-            </div>
             
-            <div className="Social Media">
-              <h3 class="ui center aligned header" style={headerStyle}>Let's Connect!</h3>
-              <SocialMedia networks={this.socialMedia} style={socialMediaBarStyle}/>
-            </div>
+            <Container>
 
-            <div class="github-card" data-user="lepture" data-repo="github-cards"></div>
 
-          </Container>
-          
-        </div>
+              <div className="Introduction" style={introductionStyle}>
+                <h1 class="ui center aligned header" style={headerStyle}>{this.basicInfo.name}</h1>
+                <img src={this.basicInfo.profileImage} class="ui medium circular image" style={headerImageStyle} alt=''/>
+                <h3 class="ui center aligned header" style={headerStyle}>{this.basicInfo.description}</h3>
+              </div>
+              
+              <div className="Social Media">
+                <h3 class="ui center aligned header" style={headerStyle}>Let's Connect!</h3>
+                <SocialMedia networks={this.socialMedia} style={socialMediaBarStyle}/>
+              </div>
+
+              <div className="WorkExperience" style={workExperienceStyle}>
+              <h1 class="ui center aligned header" style={headerStyle}>Experience</h1>
+                <Card.Group style={workExperienceStyle}>
+                  <WorkExperience work={this.workData}/>
+                </Card.Group>
+              </div>
+
+
+            </Container>
+            
+          </div>
       </div>
     );
   }
@@ -104,17 +112,18 @@ const BackgroundStyle = {
   backgroundColor: '#113951',
   backgroundPosition: 'center',
   backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat'
+  backgroundRepeat: 'repeat',
+  minHeight: '145vh'
 }
 
 const introductionStyle = {
-  paddingTop: '3vh'
+  paddingTop: '0vh'
 }
 const headerStyle = {
   fontWeight: '100',
   color: 'white',
   marginTop: '5vh',
-  marginBottom: '5vh'
+  marginBottom: '2vh'
 }
 
 const headerImageStyle = {
@@ -132,12 +141,16 @@ const MenuStyle = {
 
 
 const particleStyle = {
-  display:'blockParams',
+  display: 'inlineBlock',
   position: 'absolute',
   marginTop: '0px',
   marginBottom: '0px'
-
 }
 
+const workExperienceStyle = {
+    margin: '0 auto',
+    justifyContent: 'center',
+    backgroundColor: 'rgb(17, 57, 81)' 
+  }
 
 export default App;

@@ -68,7 +68,7 @@ class App extends Component {
           <div className="App">
               <div className="Header">
                 <div className="Menu" style={MenuStyle}>
-                  <a href="https://drive.google.com/open?id=1-5gr7ui7rGrVDdc2DeNJ_pMC71OmQ3oY">
+                  <a href="https://drive.google.com/file/d/1jV-0ZM2TQK54MMQBcDhrylWiP0QGraIE/view?usp=sharing">
                     <h4>Resume</h4>
                   </a>
                   <a href="http://github.com/anshikka">

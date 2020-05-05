@@ -1,0 +1,36 @@
+
+.repo-card {
+    height: 25em;
+}
+.repo-card .repo-name {
+    height: 20%;
+    overflow-y: auto;
+
+}
+.repo-card .repo-description {
+    overflow-y: auto;
+    height: 45%;
+}
+
+.repo-card .repo-description .repo-description {
+    height: 100%;
+}
+
+.repo-card .repo-actions {
+    height: 35%;
+}
+
+.projects-header {
+    font-weight: 100;
+    color: white;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    display: inline-block;
+}
+
+.projects-header .title {
+    float: left;
+}
+.projects-header .git-icon {
+    float: right;
+}

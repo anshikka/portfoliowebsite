@@ -1,0 +1,19 @@
+.resume-header {
+    font-weight: 100;
+    color: white;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    display: inline-block;
+}
+
+.resume-header .title {
+    float: left;
+}
+.resume-header .git-icon {
+    float: right;
+}
+
+.resume-preview canvas {
+    margin: 0 auto;
+}
+

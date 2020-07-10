@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.cdcc0ca7.chunk.css",
-    "main.js": "/static/js/main.3ea3972f.chunk.js",
-    "main.js.map": "/static/js/main.3ea3972f.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.f42e59c9.chunk.css": "/static/css/2.f42e59c9.chunk.css",
-    "static/js/2.b485d874.chunk.js": "/static/js/2.b485d874.chunk.js",
-    "static/js/2.b485d874.chunk.js.map": "/static/js/2.b485d874.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.7216add04c8e73ac07d4e5e27142afef.js": "/precache-manifest.7216add04c8e73ac07d4e5e27142afef.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.f42e59c9.chunk.css.map": "/static/css/2.f42e59c9.chunk.css.map",
-    "static/css/main.cdcc0ca7.chunk.css.map": "/static/css/main.cdcc0ca7.chunk.css.map",
-    "static/media/ansh.jpg": "/static/media/ansh.6996b0db.jpg",
-    "static/media/resume.pdf": "/static/media/resume.ccb80190.pdf"
+    "main.css": "./static/css/main.cdcc0ca7.chunk.css",
+    "main.js": "./static/js/main.cf80cfbc.chunk.js",
+    "main.js.map": "./static/js/main.cf80cfbc.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/css/2.f42e59c9.chunk.css": "./static/css/2.f42e59c9.chunk.css",
+    "static/js/2.b485d874.chunk.js": "./static/js/2.b485d874.chunk.js",
+    "static/js/2.b485d874.chunk.js.map": "./static/js/2.b485d874.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.2c83daf374fc3f6216081f8f3696bc24.js": "./precache-manifest.2c83daf374fc3f6216081f8f3696bc24.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.f42e59c9.chunk.css.map": "./static/css/2.f42e59c9.chunk.css.map",
+    "static/css/main.cdcc0ca7.chunk.css.map": "./static/css/main.cdcc0ca7.chunk.css.map",
+    "static/media/ansh.jpg": "./static/media/ansh.6996b0db.jpg",
+    "static/media/resume.pdf": "./static/media/resume.ccb80190.pdf"
   }
 }

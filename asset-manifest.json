@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfoliowebsite/static/css/main.cdcc0ca7.chunk.css",
-    "main.js": "/portfoliowebsite/static/js/main.dc4789ec.chunk.js",
-    "main.js.map": "/portfoliowebsite/static/js/main.dc4789ec.chunk.js.map",
-    "runtime~main.js": "/portfoliowebsite/static/js/runtime~main.ca92c413.js",
-    "runtime~main.js.map": "/portfoliowebsite/static/js/runtime~main.ca92c413.js.map",
-    "static/css/2.f42e59c9.chunk.css": "/portfoliowebsite/static/css/2.f42e59c9.chunk.css",
-    "static/js/2.1c82e832.chunk.js": "/portfoliowebsite/static/js/2.1c82e832.chunk.js",
-    "static/js/2.1c82e832.chunk.js.map": "/portfoliowebsite/static/js/2.1c82e832.chunk.js.map",
-    "index.html": "/portfoliowebsite/index.html",
-    "precache-manifest.d5fd2b43e5f4da5d1b4f33cb59fbb7be.js": "/portfoliowebsite/precache-manifest.d5fd2b43e5f4da5d1b4f33cb59fbb7be.js",
-    "service-worker.js": "/portfoliowebsite/service-worker.js",
-    "static/css/2.f42e59c9.chunk.css.map": "/portfoliowebsite/static/css/2.f42e59c9.chunk.css.map",
-    "static/css/main.cdcc0ca7.chunk.css.map": "/portfoliowebsite/static/css/main.cdcc0ca7.chunk.css.map",
-    "static/media/ansh.jpg": "/portfoliowebsite/static/media/ansh.6996b0db.jpg",
-    "static/media/resume.pdf": "/portfoliowebsite/static/media/resume.ccb80190.pdf"
+    "main.css": "/static/css/main.cdcc0ca7.chunk.css",
+    "main.js": "/static/js/main.62c5d3f3.chunk.js",
+    "main.js.map": "/static/js/main.62c5d3f3.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.f42e59c9.chunk.css": "/static/css/2.f42e59c9.chunk.css",
+    "static/js/2.1c82e832.chunk.js": "/static/js/2.1c82e832.chunk.js",
+    "static/js/2.1c82e832.chunk.js.map": "/static/js/2.1c82e832.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4ed103ec000de1776c8f5c5a5c86cf4b.js": "/precache-manifest.4ed103ec000de1776c8f5c5a5c86cf4b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.f42e59c9.chunk.css.map": "/static/css/2.f42e59c9.chunk.css.map",
+    "static/css/main.cdcc0ca7.chunk.css.map": "/static/css/main.cdcc0ca7.chunk.css.map",
+    "static/media/ansh.jpg": "/static/media/ansh.6996b0db.jpg",
+    "static/media/resume.pdf": "/static/media/resume.ccb80190.pdf"
   }
 }

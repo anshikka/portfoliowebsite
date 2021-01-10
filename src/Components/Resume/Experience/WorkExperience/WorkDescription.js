@@ -12,6 +12,7 @@ class WorkDescription extends Component {
 
 const listItemStyle = {
   textAlign: "left",
+  color: "black"
 };
 
 export default WorkDescription;

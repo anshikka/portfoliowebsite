@@ -58,3 +58,9 @@ a:hover:after {
   width: 100%; 
   left: 0; 
 }
+
+.ansh-icon {
+  float: left;
+  width: 7.5em;
+  height: 7.5em;
+}

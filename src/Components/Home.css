@@ -1,0 +1,22 @@
+.intro-contact {
+  height: 90vh;
+  position: relative;
+  width: 100%;
+}
+
+.intro-work {
+    height: 80vh;
+    position: relative;
+    width: 100%;
+}
+
+@keyframes bounce {
+    50% {
+      transform: translateY(-50%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

@@ -18,13 +18,15 @@ class Resume extends Component {
     this.setState({ numPages });
   };
   render() {
-    const { pageNumber, numPages } = this.state;
+    const { pageNumber } = this.state;
 
     return (
       <div id="resume">
         <div className="resume-header">
+          <a href="https://www.linkedin.com/in/ansh-sikka-42576068/">
           <h1 className="title">Resume</h1>
           <Icon className="icon" name="linkedin" size="large" />
+          </a>
         </div>
         <Document className="resume-preview"
           file={resumeFile}
@@ -33,8 +35,8 @@ class Resume extends Component {
           <Page pageNumber={pageNumber} />
         </Document>
         <div className="download-area">
-        <a href="https://drive.google.com/file/d/1FlOiLhiVVSxckP1I83rS2_uLDSy_Ra3M/view?usp=sharing">
-          Download<Icon className="icon" name="arrow down" size="large" />
+        <a href={resumeFile}>
+          Download <Icon className="icon" name="arrow down" size="large" />
         </a>
         </div>
       </div>

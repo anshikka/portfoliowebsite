@@ -38,10 +38,13 @@ class Projects extends Component {
     return (
       <div id="projects">
       <div className="projects-header">
+        <a href="https://github.com/anshikka">
         <h1 className="title">Projects</h1> 
         <Icon className="icon" name='github' size='large'/>
+        </a>
       </div>
-      <Grid relaxed columns={3}>
+      <div className="projects-grid">
+      <Grid stackable columns={3}>
         {this.state.repos.map((repo) => (
           <Grid.Column>
             <Card className="repo-card">
@@ -49,16 +52,16 @@ class Projects extends Component {
               <Card.Content className="repo-description" description={repo.description} />
               <Card.Content className="repo-actions" extra>
                 <a href={repo.html_url}>
-                  <Button basic color="green">
+                  <Button>
+                    <Icon name="github"/>
                     View on GitHub
                   </Button>
                 </a>
                 <CopyToClipboard text={repo.clone_url}>
                   <Button
-                    basic
-                    color="green"
                     onClick={() => this.confirmCopied(repo.name)}
                   >
+                    <Icon name="fork" />
                     Clone
                   </Button>
                 </CopyToClipboard>
@@ -67,6 +70,7 @@ class Projects extends Component {
           </Grid.Column>
         ))}
       </Grid>
+      </div>
       </div>
     );
   }

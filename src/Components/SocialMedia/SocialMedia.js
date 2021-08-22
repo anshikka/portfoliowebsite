@@ -16,7 +16,6 @@ class SocialMedia extends Component {
             <a className="social-media-icon" href={network.link}>
                 <Icon name={network.iconName} size='big'/>
             </a>
-            
         );
     }
 }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Card, Icon } from "semantic-ui-react";
+import { Header, Container, Item, Label } from "semantic-ui-react";
 import WorkDescription from "./WorkExperience/WorkDescription";
-
 
 class WorkExperience extends Component {
   workData = [
@@ -12,8 +11,11 @@ class WorkExperience extends Component {
       positionName: "Data Engineer/Analyst",
       date: "Sep 2020 - Present",
       workDescription: [
-        "Streamlined company-wide cybersecurity monitoring using Apache NiFi and reduced data processing time from 3 minutes to 1 minute",
-        "Used advanced SQL to perform analysis on extended quantities of quantitative and qualitative data",
+        "Working on a Zoom Analytics big data project, taking 500+ zoom events/sec as streaming data and processing it on Azure Functions and Azure Event Hub, eventually warehousing it on Snowflake",
+        "Helping main design leads and architects with big data architectures in a variety of projects",
+        "Streamlined company-wide cybersecurity machine monitoring using flow-based programming via Apache NiFi for ETL and reduced time to find cybersecurity holes from months to minutes",
+        "Used HANA SQL to develop Manual Data Input Systems and validations for the upper management",
+        "Working with Azure Functions, APIM, and KeyVault to develop an API to provide access to a central company data repository on Snowflake, helping reduce cost in data subscriptions (approx $75m in data subscription costs saved)",
       ],
     },
     {
@@ -23,11 +25,11 @@ class WorkExperience extends Component {
       positionName: "Cloud Engineering Intern",
       date: "May 2019 - August 2019",
       workDescription: [
-        "Revamped the internal cloud web platform using Ghost CMS in an Agile Development environment",
-        "Worked with Handlebars.js to develop frontend components",
-        "Deployed the web platform onto Azure App Service",
-        "Incorporated cloud resources such as Azure Storage, Active Directory, and SendGrid Email Service",
-        "Trained other employees and interns on how to use Azure portal and DevOps",
+        "Replatformed internal cloud adoption platform in an agile work environment to Microsoft Azure: Utilized blob storage, SQL, KeyVault, SendGrid, and search service.",
+        "Full Stack Web Development: Handlebars.js for frontend and Node.js for the backend",
+        "Customized open source CMS (Content Management System) to adapt to new website format and UX",
+        "Made the entire cloud adoption web platform content editable: No developer needed to make website changes. Eliminated content writers’ need to learn HTML/CSS to make basic blog edits to the platform",
+        "Teaching assistant to over 100 other interns and employees helping them get started with Azure",
       ],
     },
     {
@@ -36,61 +38,62 @@ class WorkExperience extends Component {
       positionName: "Deep/Machine Learning and Data Science Intern",
       date: "June 2018 - September 2018",
       workDescription: [
-        "Implemented a demand/lead generation recommendation engine based on specific criteria using machine learning",
-        "Saved thousands of hours of manual work reading through company data for demand generation using efficient automation algorithms: Reduced a month of manual work into 15 minutes through the recommendation engine",
-        "Worked directly under the CTO",
-        "Was given training on basic deep learning and extensive training on machine learning",
+        "Built a machine learning-based recommendation system with a high accuracy rate that provides a ranked list of top companies and leads to contact for Quinnox’s demand generation team",
+        "Used data mining and web scraping libraries such as BeautifulSoup and MechanicalSoup to retrieve large amounts of useful company, employee, and job data from different sources such as RainKing and LinkedIn to train an ML model and use it to get a list of top companies for contact/sales",
+        "Reduced two months of work from the demand generation team to 8-10 minutes by implementing efficient automation algorithms",
+        "Used big-data libraries such as NumPy and SciKitLearn for the machine learning process",
+        "Given training on machine learning and basic deep learning algorithms/libraries such as PyTorch and Tensorflow",
       ],
     },
   ];
   render() {
     return this.workData.map((job) => (
-      <Card style={workExperienceStyle}>
-        <Card.Content style={cardStyle}>
-          <Card.Header style={contentStyle}>{job.positionName}</Card.Header>
-          <Card.Meta style={contentStyle}>{job.companyName}</Card.Meta>
-          <Card.Description>
+      
+      <Item>
+        <Container textAlign='left'>
+          <Header style={headerStyle} as="h2">
+            {job.positionName}
+          </Header>
+        </Container>
+        
+        <Item.Content style={cardStyle}>
+        <Container style={contentStyle} textAlign='center'>
+          <Item.Header style={headerStyle}>{job.companyName}</Item.Header>
+          <Item.Description>
             <ul>
-              <WorkDescription style={contentStyle} workItems={job.workDescription} />
+              <WorkDescription
+                style={contentStyle}
+                workItems={job.workDescription}
+              />
             </ul>
-          </Card.Description>
-        </Card.Content>
-        <Card.Content extra>
-          <Card.Meta style={dateStyle}>
-            <Icon name="clock" style={clockStyle}/>
-            {job.date}
-          </Card.Meta>
-        </Card.Content>
-      </Card>
+          </Item.Description>
+        <Label icon='clock outline' content={job.date} />
+        </Container>
+
+        
+        
+        </Item.Content>
+        
+      </Item>
+      
     ));
   }
 }
 
-const workExperienceStyle = {
-  float: "left",
-  margin: "2vh 1vw auto 1vw",
-  backgroundColor: "white",
-  height: "60vh",
+const contentStyle = {
+  color: "white",
 };
 
-const contentStyle = {
-  color: "black"
-}
+const headerStyle = {
+  color: "white",
+  fontSize: "large"
+
+};
 
 const cardStyle = {
   minHeight: "45vh",
   overflowY: "auto",
 };
-
-
-const dateStyle = {
-  color: "black",
-}
-
-const clockStyle = {
-  marginRight: "1vw"
-}
-
 
 
 export default WorkExperience;

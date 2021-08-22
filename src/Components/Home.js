@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import WorkExperience from "./Resume/Experience/WorkExperience";
-import { Card } from "semantic-ui-react";
+import { Item, Divider, Container } from "semantic-ui-react";
 import profile_pic from "../assets/images/ansh.jpeg";
 import "./Home.css";
 class Home extends Component {
@@ -9,7 +9,7 @@ class Home extends Component {
     profileImage: profile_pic,
     name: "Hi, my name is Ansh Sikka",
     description:
-      "I am a software engineer who recently graduated from the Uniersity of Minnesota with a dedicated track in Big Data. My interests and skills include data science, cloud platform engineering, and the application of emerging technologies and tools. I currently work as a data engineer/analyst at ExxonMobil in Houston.",
+      "I’m a software engineer who graduated from the University of Minnesota with a dedicated track in Big Data. My interests and skills include big data, cloud platform engineering, and the application of emerging technologies and tools. I currently work as a software engineer and design lead on the Corporate Data Solutions team at ExxonMobil in Houston.",
   };
 
   render() {
@@ -26,26 +26,23 @@ class Home extends Component {
               style={headerImageStyle}
               alt=""
             />
+            <Container fluid>
             <h3 class="ui center aligned header" style={headerStyle}>
               {this.basicInfo.description}
             </h3>
+            </Container>
           </div>
-
+          <Divider style={dividerStyle} horizontal>Let's Connect!</Divider>
           <div className="Social Media">
-            <h3 class="ui center aligned header" style={headerStyle}>
-              Let's Connect!
-            </h3>
-            <SocialMedia style={socialMediaBarStyle} />
+            <SocialMedia />
           </div>
         </div>
         <div className="intro-work">
         <div className="WorkExperience" style={workExperienceStyle}>
-          <h1 class="ui center aligned header" style={headerStyle}>
-            Experience
-          </h1>
-          <Card.Group style={workExperienceStyle}>
+        <Divider style={dividerStyle} horizontal>Experience</Divider>
+          <Item.Group style={workExperienceStyle}>
             <WorkExperience />
-          </Card.Group>
+          </Item.Group>
         </div>
         </div>
         <br />
@@ -64,12 +61,14 @@ const headerStyle = {
   marginBottom: "2vh",
 };
 
+const dividerStyle = {
+  color: "white",
+  fontSize: "larger", 
+  paddingBottom: "2vh"
+}
+
 const headerImageStyle = {
   margin: "0 auto",
-};
-
-const socialMediaBarStyle = {
-  paddingBottom: "10vh",
 };
 
 const workExperienceStyle = {

@@ -61,9 +61,8 @@ const BackgroundStyle = {
   backgroundColor: "#16213e",
   backgroundPosition: "center",
   backgroundSize: "cover",
-  backgroundRepeat: "repeat-y",
   backgroundImage: `url(${background_pic})`,
-  minHeight: "260vh"
+  backgroundRepeat: "repeat-y"
 };
 
 const MenuStyle = {

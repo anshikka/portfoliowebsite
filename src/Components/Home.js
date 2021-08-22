@@ -15,36 +15,50 @@ class Home extends Component {
   render() {
     return (
       <div id="home">
+        <Container fluid>
         <div className="intro-contact">
           <div className="Introduction" style={introductionStyle}>
-            <h1 class="ui center aligned header" style={headerStyle}>
-              {this.basicInfo.name}
-            </h1>
-            <img
-              src={this.basicInfo.profileImage}
-              class="ui medium circular image"
-              style={headerImageStyle}
-              alt=""
-            />
-            <Container fluid>
-            <h3 class="ui center aligned header" style={headerStyle}>
-              {this.basicInfo.description}
-            </h3>
-            </Container>
+            
+              <h1 class="ui center aligned header" style={headerStyle}>
+                {this.basicInfo.name}
+              </h1>
+              <img
+                src={this.basicInfo.profileImage}
+                class="ui medium circular image"
+                style={headerImageStyle}
+                alt=""
+              />
+              <Container>
+              <h3 class="ui center aligned header" style={headerStyle}>
+                {this.basicInfo.description}
+              </h3>
+              </Container>
+            
           </div>
-          <Divider style={dividerStyle} horizontal>Let's Connect!</Divider>
+        </div>
+        </Container>
+
+        <Container>
           <div className="Social Media">
+            <Divider style={dividerStyle} horizontal>
+              Let's Connect!
+            </Divider>
+
             <SocialMedia />
           </div>
-        </div>
-        <div className="intro-work">
-        <div className="WorkExperience" style={workExperienceStyle}>
-        <Divider style={dividerStyle} horizontal>Experience</Divider>
-          <Item.Group style={workExperienceStyle}>
-            <WorkExperience />
-          </Item.Group>
-        </div>
-        </div>
+        </Container>
+        <Container fluid>
+          <div className="WorkExperience" style={workExperienceStyle}>
+            <Divider style={dividerStyle} horizontal>
+              Experience
+            </Divider>
+            <Container>
+            <Item.Group style={workExperienceStyle}>
+              <WorkExperience />
+            </Item.Group>
+            </Container>
+          </div>
+        </Container>
         <br />
       </div>
     );
@@ -63,9 +77,9 @@ const headerStyle = {
 
 const dividerStyle = {
   color: "white",
-  fontSize: "larger", 
-  paddingBottom: "2vh"
-}
+  fontSize: "larger",
+  paddingBottom: "2vh",
+};
 
 const headerImageStyle = {
   margin: "0 auto",

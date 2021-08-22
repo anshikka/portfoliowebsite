@@ -19,6 +19,7 @@ class App extends Component {
       <div className="OverlayBackground" style={BackgroundStyle} src={background_pic}>
         <div className="App">
           <div className="Header">
+            <Container fluid>
             <div className="Menu" style={MenuStyle}>
               <a href="/">
                 <h4>Home</h4>
@@ -30,29 +31,21 @@ class App extends Component {
                 <h4>Projects</h4>
               </a>
             </div>
+            </Container>
           </div>
 
           <Router>
-            <Container>
+            <Container fluid>
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/projects" component={Projects} />
                 <Route exact path="/resume" component={Resume} />
               </Switch>
             </Container>
-            <ToastContainer
-              style={{ textAlign: "center" }}
-              autoClose={3000}
-              position="bottom-center"
-              hideProgressBar={true}
-              newestOnTop={true}
-              closeOnClick
-              draggable={false}
-              pauseOnHover={true}
-            />
           </Router>
         </div>
       </div>
+      
     );
   }
 }
@@ -62,7 +55,7 @@ const BackgroundStyle = {
   backgroundPosition: "center",
   backgroundSize: "cover",
   backgroundImage: `url(${background_pic})`,
-  backgroundRepeat: "repeat-y"
+  backgroundRepeat: 'repeatY'
 };
 
 const MenuStyle = {

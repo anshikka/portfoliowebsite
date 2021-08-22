@@ -15,5 +15,10 @@
 
 .resume-preview canvas {
     margin: 0 auto;
+    overflow: auto;
+}
+
+.resume .download-area-mobile {
+    min-height: 200vh;
 }
 

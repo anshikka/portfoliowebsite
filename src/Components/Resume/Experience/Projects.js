@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Button, Grid, Card, Icon } from "semantic-ui-react";
+import { Button, Grid, Card, Icon, Label, Header } from "semantic-ui-react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "./Projects.css";
 
 class Projects extends Component {
@@ -45,10 +45,15 @@ class Projects extends Component {
       </div>
       <div className="projects-grid">
       <Grid stackable columns={3}>
-        {this.state.repos.map((repo) => (
+        {this.state.repos
+        .sort((a,b) => a.updated_at < b.updated_at ? 1: -1)
+        .map((repo) => (
           <Grid.Column>
             <Card className="repo-card">
-              <Card.Content className="repo-name" header={repo.name} />
+              <Card.Content className="repo-header" header={repo.name}>
+                <Header>{repo.name}</Header>
+                <Label className="updated-at" icon='clock outline' content= {"Updated: " + new Date(repo.updated_at).toString()}/>
+              </Card.Content>
               <Card.Content className="repo-description" description={repo.description} />
               <Card.Content className="repo-actions" extra>
                 <a href={repo.html_url}>
@@ -65,13 +70,17 @@ class Projects extends Component {
                     Clone
                   </Button>
                 </CopyToClipboard>
+                
               </Card.Content>
             </Card>
+            
           </Grid.Column>
         ))}
       </Grid>
       </div>
+      <ToastContainer position="top-center" hideProgressBar={true}/>
       </div>
+      
     );
   }
 }

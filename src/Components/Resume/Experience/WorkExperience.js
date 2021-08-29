@@ -8,7 +8,7 @@ class WorkExperience extends Component {
       companyName: "ExxonMobil",
       companyLogo:
         "https://1000logos.net/wp-content/uploads/2017/08/ExxonMobil-Logo.png",
-      positionName: "Data Engineer/Analyst",
+      positionName: "Software Engineer and Design Lead",
       date: "Sep 2020 - Present",
       workDescription: [
         "Working on a Zoom Analytics big data project, taking 500+ zoom events/sec as streaming data and processing it on Azure Functions and Azure Event Hub, eventually warehousing it on Snowflake",
@@ -22,7 +22,7 @@ class WorkExperience extends Component {
       companyName: "ExxonMobil",
       companyLogo:
         "https://1000logos.net/wp-content/uploads/2017/08/ExxonMobil-Logo.png",
-      positionName: "Cloud Engineering Intern",
+      positionName: "Software Engineering Intern",
       date: "May 2019 - August 2019",
       workDescription: [
         "Replatformed internal cloud adoption platform in an agile work environment to Microsoft Azure: Utilized blob storage, SQL, KeyVault, SendGrid, and search service.",
@@ -35,7 +35,7 @@ class WorkExperience extends Component {
     {
       companyName: "Quinnox, Inc.",
       companyLogo: "https://www.chetanasforum.com/images_og/quinnox-1.png",
-      positionName: "Deep/Machine Learning and Data Science Intern",
+      positionName: "Software Engineering Intern",
       date: "June 2018 - September 2018",
       workDescription: [
         "Built a machine learning-based recommendation system with a high accuracy rate that provides a ranked list of top companies and leads to contact for Quinnox’s demand generation team",

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Container } from "semantic-ui-react";
-import { ToastContainer } from "react-toastify";
 import {
   HashRouter as Router,
   Route,

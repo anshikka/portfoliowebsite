@@ -2,11 +2,15 @@
 .repo-card {
     height: 25em;
 }
-.repo-card .repo-name {
-    height: 20%;
+.repo-card .repo-header {
+    height: 40%;
     overflow-y: auto;
-
 }
+
+.repo-card .repo-header .updated-at {
+    color: green;
+}
+
 .repo-card .repo-description {
     overflow-y: auto;
     height: 45%;
@@ -17,7 +21,7 @@
 }
 
 .repo-card .repo-actions {
-    height: 35%;
+    height: 45%;
 }
 
 .projects-header {

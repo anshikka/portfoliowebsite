@@ -5,11 +5,20 @@ import WorkDescription from "./WorkExperience/WorkDescription";
 class WorkExperience extends Component {
   workData = [
     {
+      companyName: "Deloitte",
+      positionName: "Strategy and Analytics Solution Specialist",
+      date: "Nov 2021 - Present",
+      workDescription: [
+        "Technologies: Snowflake, Azure Cloud, SQL, SSIS Data Pipelines, AWS",
+        "Responsibilities: Data Engineering, Advisory"
+      ],
+    },
+    {
       companyName: "ExxonMobil",
       companyLogo:
         "https://1000logos.net/wp-content/uploads/2017/08/ExxonMobil-Logo.png",
       positionName: "Software Engineer and Design Lead",
-      date: "Sep 2020 - Present",
+      date: "Sep 2020 - Oct 2021",
       workDescription: [
         "Working on a Zoom Analytics big data project, taking 500+ zoom events/sec as streaming data and processing it on Azure Functions and Azure Event Hub, eventually warehousing it on Snowflake",
         "Helping main design leads and architects with big data architectures in a variety of projects",

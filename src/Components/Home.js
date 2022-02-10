@@ -9,7 +9,7 @@ class Home extends Component {
     profileImage: profile_pic,
     name: "Hi, my name is Ansh Sikka",
     description:
-      "I’m a software engineer who graduated from the University of Minnesota with a dedicated track in Big Data. My interests and skills include big data, cloud platform engineering, and the application of emerging technologies and tools. I currently work as a software engineer and design lead on the Corporate Data Solutions team at ExxonMobil in Houston.",
+      "Hey there! I'm currently studying part time for my master's at the Georgia Institute of Technology with a dedicated track in Interactive Intelligence. My interests and skills include big data, cloud platform engineering, and the application of emerging technologies and tools. I currently work as a solutions specialist and software engineer for the Strategy and Analytics division at Deloitte in Chicago.",
   };
 
   render() {

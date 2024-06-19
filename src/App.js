@@ -3,7 +3,7 @@ import { Container } from "semantic-ui-react";
 import {
   HashRouter as Router,
   Route,
-  Switch,
+  Routes,
 } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import background_pic from "./assets/images/background.jpg";
@@ -15,7 +15,6 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div className="OverlayBackground" style={BackgroundStyle} src={background_pic}>
         <div className="App">
           <div className="Header">
             <Container fluid>
@@ -35,15 +34,14 @@ class App extends Component {
 
           <Router>
             <Container fluid>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/projects" component={Projects} />
-                <Route exact path="/resume" component={Resume} />
-              </Switch>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects/>} />
+                <Route path="/resume" element={<Resume/>} />
+              </Routes>
             </Container>
           </Router>
         </div>
-      </div>
       
     );
   }

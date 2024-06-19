@@ -1,5 +1,4 @@
 .intro-contact {
-  height: 80vh;
   position: relative;
   width: 100%;
 }
@@ -9,6 +8,9 @@
     width: 100%;
 }
 
+#home{
+  height: 100%;
+}
 @keyframes bounce {
     50% {
       transform: translateY(-50%);

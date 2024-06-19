@@ -6,12 +6,22 @@ class WorkExperience extends Component {
   workData = [
     {
       companyName: "Deloitte",
-      positionName: "Strategy and Analytics Solution Specialist",
+      positionName: "Senior Data Engineer",
       date: "Nov 2021 - Present",
       workDescription: [
-        "Technologies: Snowflake, Azure Cloud, SQL, SSIS Data Pipelines, AWS",
-        "Responsibilities: Data Engineering, Advisory"
-      ],
+        "Developed 10 new ETL pipelines orchestrated in SSIS",
+        "Part of a 'Tiger Team' to quickly build out a data warehousing solution in SQL Server within 6 months, used PowerApps/PowerAutomate to connect to automate data flow between SharePoint, SQL server, and Outlook for reporting",
+        "Optimized 5 existing ETL pipelines cutting their time by an average of 95% using SQL optimization and best practices",
+        "Automated an asset management system to pull new iPad models using Python web scraping (BeautifulSoup) for an Asset Management System",
+        "Lead a ETL migration for over 20 pipelines cross-server",
+        "Established a Tableau Usage Dashboard backend that sources millions of rows from Tableau Usage metadata and developed optimized materialized views for a dashboard",
+        "Automated an enterprise data storage analysis that would've taken 3 weeks by developing a Python and SQL script that took just 3 hours",
+        "Set up an Azure SQL Server environment as a firm initiative pilot to move data to the cloud from on-prem.",
+        "Pitched Snowflake as a potential warehousing solution for big data",
+        "Worked with horizontal lead to establish code-review standards, set up CI/CD pipelines on Azure DevOps, migrated from File-based version control to Git (and set up standards and usage templates for Git)",
+        "On-boarded 4 backend developers weeks and acquainted them with new best practices"
+    ]
+
     },
     {
       companyName: "ExxonMobil",

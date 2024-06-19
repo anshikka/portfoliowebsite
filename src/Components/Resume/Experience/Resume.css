@@ -13,9 +13,14 @@
     float: right;
 }
 
+
 .resume-preview canvas {
     margin: 0 auto;
     overflow: auto;
+}
+
+.resume-preview .react-pdf__Page {
+    background-color: unset !important;
 }
 
 .resume .download-area-mobile {

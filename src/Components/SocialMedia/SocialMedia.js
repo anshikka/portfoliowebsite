@@ -5,7 +5,6 @@ import './SocialMedia.css';
 
 class SocialMedia extends Component {
     socialMedia = [
-        {iconName: 'facebook f', link: 'https://www.facebook.com/ansh.sikka'},
         {iconName: 'linkedin', link: 'https://www.linkedin.com/in/ansh-sikka-42576068/'},
         {iconName: 'github', link: 'https://github.com/anshikka'},
         {iconName: 'medium m', link: 'https://medium.com/@sikka008'},

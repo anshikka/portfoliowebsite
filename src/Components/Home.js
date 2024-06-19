@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SocialMedia from "./SocialMedia/SocialMedia";
-import WorkExperience from "./Resume/Experience/WorkExperience";
-import { Item, Divider, Container } from "semantic-ui-react";
+//import WorkExperience from "./Resume/Experience/WorkExperience";
+import { Divider, Container } from "semantic-ui-react";
 import profile_pic from "../assets/images/ansh.jpeg";
 import "./Home.css";
 class Home extends Component {
@@ -9,13 +9,13 @@ class Home extends Component {
     profileImage: profile_pic,
     name: "Hi, my name is Ansh Sikka",
     description:
-      "Hey there! I'm currently studying part time for my master's at the Georgia Institute of Technology with a dedicated track in Interactive Intelligence. My interests and skills include big data, cloud platform engineering, and the application of emerging technologies and tools. I currently work as a solutions specialist and software engineer for the Strategy and Analytics division at Deloitte in Chicago.",
+      "Hey there! I'm currently working as a senior data engineer at Deloitte. I also recently completed my Master's degree in computer science from Georgia Tech with an emphasis on Interactive Intelligence. Feel free to explore and learn a bit more about me!",
   };
 
   render() {
     return (
       <div id="home">
-        <Container fluid>
+        <Container>
         <div className="intro-contact">
           <div className="Introduction" style={introductionStyle}>
             
@@ -36,8 +36,7 @@ class Home extends Component {
             
           </div>
         </div>
-        </Container>
-
+        
         <Container>
           <div className="Social Media">
             <Divider style={dividerStyle} horizontal>
@@ -47,6 +46,8 @@ class Home extends Component {
             <SocialMedia />
           </div>
         </Container>
+        </Container>
+        {/*
         <Container fluid>
           <div className="WorkExperience" style={workExperienceStyle}>
             <Divider style={dividerStyle} horizontal>
@@ -59,8 +60,11 @@ class Home extends Component {
             </Container>
           </div>
         </Container>
+        */}
         <br />
       </div>
+
+    
     );
   }
 }
@@ -83,11 +87,12 @@ const dividerStyle = {
 
 const headerImageStyle = {
   margin: "0 auto",
+  width: "20%"
 };
-
+/*
 const workExperienceStyle = {
   margin: "0 auto",
   justifyContent: "center",
 };
-
+*/
 export default Home;

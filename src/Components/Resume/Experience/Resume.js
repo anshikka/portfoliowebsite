@@ -28,7 +28,7 @@ class Resume extends Component {
             <h1 className="title">Resume</h1>
             <Icon className="icon" name="linkedin" size="large" />
           </a>
-          <h4>Updated June 19, 2024</h4>
+          <h4>Updated September 5, 2024</h4>
         </div>
           <Container>
             <Document
